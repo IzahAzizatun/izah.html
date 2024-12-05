@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desain Hidangan Makanan</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #c6d8cf;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header img {
+            width: 150px; 
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 50%;
+        }
+
+        .header h1 {
+            font-size: 27px;
+            color: #2c6e49;
+            font-weight: bold;
+            margin: 0;
+        }
+
+       
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .dish-container {
+            background: linear-gradient(135deg, #f5fff2, #d4edda);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .dish-container:hover {
+            transform: translateY(-5px);
+        }
+
+        .dish-image {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover; 
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+
+        .dish-title {
+            font-size: 18px; 
+            color: #2c6e49;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .dish-price {
+            font-size: 16px;
+            color: #27ae60;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .dish-description {
+            font-size: 12px; 
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 8px; 
+        }
+
+        .dish-button {
+            background-color: #27ae60;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 15px; 
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 3px 5px rgba(39, 174, 96, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .dish-button:hover {
+            background-color: #219653;
+            transform: translateY(-3px);
+        }
+
+        .dish-button::before {
+            content: '🛒';
+            margin-right: 6px;
+        }
+
+        .social-icon {
+            width: 30px;
+            height: 30px;
+            background-color: #e0f2e9;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background-color: #219653;
+        }
+
+        .social-icon img {
+            width: 16px;
+            height: 16px;
+        }
+
+        
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .dish-container {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .dish-image {
+                max-height: 150px;
+            }
+
+            .dish-title {
+                font-size: 16px;
+            }
+
+            .dish-price {
+                font-size: 14px;
+            }
+
+            .dish-description {
+                font-size: 11px;
+            }
+
+            .button-container {
+                flex-wrap: wrap;
+            }
+
+            .dish-button {
+                padding: 8px 15px; 
+                font-size: 13px;
+            }
+
+            .social-icon img {
+                width: 14px;
+                height: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        <img src="https://i.ibb.co.com/smmgQtG/Whats-App-Image-2024-12-02-at-12-57-26-jpeg.jpg" alt="Logo Kol Isi Tahu">
+        <h1>Healthy food</h1>
+    </div>
+
+   
+    <div class="main-content">
+       
+        <div class="dish-container">
+            <img src="https://img-global.cpcdn.com/recipes/1493aff1c88021b5/680x964cq70/kol-gulung-isi-tahu-foto-resep-utama.webp" alt="Kol Isi Tahu" class="dish-image">
+            <h1 class="dish-title">Kol Isi Tahu</h1>
+            <p class="dish-price">Rp 5.000</p>
+            <p class="dish-description">Kombinasi rasa yang sempurna dengan saus pedas dan gurih.</p>
+            <div class="button-container">
+                <a href="https://wa.me/6285775211374?text=Halo%20saya%20ingin%20memesan%20Kol%20Isi%20Tahu" class="dish-button" target="_blank">Pesan Sekarang</a>
+                <a href="https://www.instagram.com/azizatunbl/profilecard/?igsh=b29hNnUzcWw1Mzgz" target="_blank" class="social-icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                </a>
+                <a href="https://goo.gl/maps/uHD3zKN7JhCfqjPb8" target="_blank" class="social-icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/418px-Google_Maps_icon_%282020%29.svg.png" alt="Google Maps Icon">
+                </a>
+            </div>
+        </div>
+
+  
+    <div class="dish-container">
+        <img src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/222/2024/08/02/IMG-20240802-WA0149-1433127918.jpg" alt="Lumpia Sayur" class="dish-image">
+        <h1 class="dish-title">Es Teh</h1>
+        <p class="dish-price">Rp 6.000</p>
+        <p class="dish-description">dengan perpaduan teh yang murni dengan es yang segar.</p>
+        <div class="button-container">
+            <a href="https://wa.me/6285775211374?text=Halo%20saya%20ingin%20memesan%20Es%20Teh" class="dish-button" target="_blank">
+                Pesan Sekarang
+            </a>
+            <a href="https://www.instagram.com/azizatunbl/profilecard/?igsh=b29hNnUzcWw1Mzgz" target="_blank" class="social-icon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://goo.gl/maps/uHD3zKN7JhCfqjPb8" target="_blank" class="social-icon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/418px-Google_Maps_icon_%282020%29.svg.png" alt="Google Maps Icon">
+            </a>
+        </div>
+    </div>
+
+    <div class="dish-container">
+        <img src="https://tugujatim.id/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-08-at-21.30.20.jpeg" alt="Bakwan Jagung" class="dish-image">
+        <h1 class="dish-title">Basreng</h1>
+        <p class="dish-price">Rp 4.000</p>
+        <p class="dish-description">Gurih dan renyah, Basreng ini cocok untuk semua suasana.</p>
+        <div class="button-container">
+            <a href="https://wa.me/6285775211374?text=Halo%20saya%20ingin%20memesan%20Basreng%20Gurih" class="dish-button" target="_blank">
+                Pesan Sekarang
+            </a>
+            <a href="https://www.instagram.com/azizatunbl/profilecard/?igsh=b29hNnUzcWw1Mzgz" target="_blank" class="social-icon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <a href="https://goo.gl/maps/uHD3zKN7JhCfqjPb8" target="_blank" class="social-icon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Google_Maps_icon_%282020%29.svg/418px-Google_Maps_icon_%282020%29.svg.png" alt="Google Maps Icon">
+            </a>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
